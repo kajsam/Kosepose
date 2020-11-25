@@ -5,7 +5,9 @@
 
 ## Library ####################################################
 
-library(readxl) # to read the excel sheet
+# library(readxl) # to read the excel sheet
+# library(import)
+import::from(readxl, read_excel) 
 library(tibble) # to create tibble instead of data.frame
 library(dplyr) # to drop column from tibble, using select()
 
