@@ -9,22 +9,22 @@ library(readxl) # to read the excel sheet
 library(tibble) # to create tibble instead of data.frame
 library(dplyr) # to drop column from tibble, using select()
 
+## Input arguments ######################################
+args = commandArgs(trailingOnly = T)
+
+filename = args[1]
+resp_var_name = args[2]
+
 ## Read data ####################################################
-
-filename = commandArgs(trailingOnly = F)
-
-print(filename[6])
 
 # a = readline(prompt = "press any button")
 
 # I first read the Excel-sheet provided by Tonje and have a look at it. 
-Workfile <- read_excel(filename[6]) 
+Workfile <- read_excel(filename) 
 
 ## Choose a part of the fish #################################################
 
-# args = commandArgs(trailingOnly = TRUE) 
-# resp_var_name = args[1]
-resp_var_name = c("Tail") # , , , , , "Belly"  "Fillet" "Loin"
+# resp_var_name = c("Tail") # , , , , , "Belly"  "Fillet" "Loin"
 
 ## Quality control and summary statistics ##########################################
 
