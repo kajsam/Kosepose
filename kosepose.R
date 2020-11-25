@@ -11,8 +11,14 @@ library(dplyr) # to drop column from tibble, using select()
 
 ## Read data ####################################################
 
+filename = commandArgs(trailingOnly = F)
+
+print(filename[6])
+
+# a = readline(prompt = "press any button")
+
 # I first read the Excel-sheet provided by Tonje and have a look at it. 
-Workfile <- read_excel("/Volumes/kam025/Dokaments/Kosepose/Bleeding time and bleeding method.xlsx") 
+Workfile <- read_excel(filename[6]) 
 
 ## Choose a part of the fish #################################################
 
