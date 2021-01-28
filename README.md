@@ -1,7 +1,4 @@
 # Kosepose
 
-Here is the statistical analysis (in R) for the Kosepose-project, lead by Tonje Kristin Jensen. 
-
-Data from Tonje Kristin Jensen.
-
-Manuscript in process. 
+The file kosepose.R contains all statistical analysis for the manuscript "Quality of trawl-caught Atlantic cod (Gadus morhua): effect of time before bleeding and codend design". 
+Data provided by Tonje K. Jensen.
